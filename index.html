@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FormVault</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>📥 Submit Your Details</h2>
+    <input type="text" id="name" placeholder="Full Name" />
+    <input type="email" id="email" placeholder="Email Address" />
+    <textarea id="message" placeholder="Your message..."></textarea>
+    <button onclick="submitForm()">Submit</button>
+  </div>
+
+  <div class="data-table">
+    <h3>🗃️ Stored Submissions</h3>
+    <table id="records">
+      <thead>
+        <tr><th>Name</th><th>Email</th><th>Message</th><th>Delete</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
